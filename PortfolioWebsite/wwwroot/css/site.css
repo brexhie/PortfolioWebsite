@@ -1,3 +1,12 @@
+:root {
+    --bs-primary: #0F172A; /*Dark blue*/
+    --bs-secondary: #94A3B8; /*Muted grey*/
+    --bs-light: #F8FAFC; /*Surface white*/
+    --bs-dark: #EF4444; /*Danger red*/
+    --accent: #22C55E; /*Accent green*/
+}
+
+
 html {
   font-size: 14px;
 }
@@ -18,5 +27,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bs-light);
+    color: var(--bs-body-color);
+    margin-bottom: 60px;
 }
