@@ -26,9 +26,147 @@ html {
   min-height: 100%;
 }
 
+.nav-text {
+    font-size: 1.5rem;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bs-light);
-    color: var(--bs-body-color);
+    color: var(--bs-primary);
     margin-bottom: 60px;
 }
+
+p {
+    color: var(--bs-primary)
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* pushes left + right apart */
+    align-items: center; /* vertically centers */
+    padding: 10px 20px;
+    background-color: white; /* or your chosen footer color */
+    color: var(--bs-primary);
+}
+
+/*.footer-left {
+    font-size: 0.9rem;
+}
+
+.footer-right img {
+    width: 2.5rem;  adjust size 
+    height: 2.5rem;
+    margin-left: 12px;  spacing between icons 
+    cursor: pointer;
+} */
+
+h1 {
+    margin-top: 75px;
+    color: var(--bs-primary);
+    font-weight: 400;
+}
+
+.home-text {
+    font-size: 1.2rem;
+    animation: fadeSlideUp 1.5s;
+}
+
+.btn-brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: var(--accent); /* green fill */
+    color: var(--bs-primary); /* dark text for contrast */
+    border: solid;
+    border-width: 1px;
+    border-color: var(--bs-light);
+    border-radius: 40px; /* curved corners */
+    padding: 20px 72px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: var(--bs-primary); /* dark text for contrast */
+    border: solid;
+    border-width: 1px;
+    border-radius: 40px; /* curved corners */
+    padding: 20px 58px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.project-card {
+    border-radius: 12px; /* smooth corners */
+    overflow: hidden; /* keeps image corners rounded */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--bs-primary)
+    }
+
+    .project-card .card-text {
+        font-size: 0.95rem;
+        color: var(--bs-primary);
+    }
+
+.AboutImg {
+    height: 17.5rem;
+    width: 17.5rem;
+    border-radius: 1000px;
+    margin-bottom: 40px;
+    animation: fadeSlideUp 1s;
+}
+
+.githubImg {
+    height: 5rem;
+    width: 5.4rem;
+}
+
+.linkedinImg {
+    height: 4.9rem;
+    width: 5rem;
+}
+
+.emailImg {
+    height: 5rem;
+    width: 5rem;
+}
+
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.heading-home {
+    margin-top: 75px;
+    color: var(--bs-primary);
+    font-weight: 400;
+    animation: fadeSlideUp 1s;
+}
+
+
