@@ -37,12 +37,18 @@ html, body {
     flex-direction: column;
 }
 
+.page-container > .container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;                 /* <-- this expands to push footer down */
+}
+
 .nav-text {
     font-size: 1.5rem;
 }
 
-main {
-    flex: 1; /* takes up remaining space above footer */
+.page-container > .container > main {
+  flex: 1;
 }
 
 p {
@@ -54,22 +60,8 @@ p {
     background-color: white;
     color: var(--bs-primary);
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
 }
-
-/*.footer-left {
-    font-size: 0.9rem;
-}
-
-.footer-right img {
-    width: 2.5rem;  adjust size 
-    height: 2.5rem;
-    margin-left: 12px;  spacing between icons 
-    cursor: pointer;
-} */
 
 h1 {
     margin-top: 75px;
@@ -82,7 +74,7 @@ h1 {
     animation: fadeSlideUp 1.5s;
 }
 
-.btn-brand {
+.btn-viewWork {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -118,6 +110,7 @@ h1 {
     border-radius: 12px; /* smooth corners */
     overflow: hidden; /* keeps image corners rounded */
     transition: transform 0.2s, box-shadow 0.2s;
+    animation: fadeSlideUp 1s;
 }
 
     .project-card:hover {
@@ -140,7 +133,6 @@ h1 {
     height: 17.5rem;
     width: 17.5rem;
     border-radius: 1000px;
-    margin-bottom: 80px;
     animation: fadeSlideUp 1s;
 }
 
@@ -177,4 +169,28 @@ h1 {
     color: var(--bs-primary);
     font-weight: 400;
     animation: fadeSlideUp 1s;
+}
+
+.animation-container { 
+    animation: fadeSlideUp 1s;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform; /* performance hint */
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
 }
