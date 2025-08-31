@@ -154,6 +154,29 @@ p {
         color: var(--bs-primary);
     }
 
+.education-card {
+    border-radius: 12px; /* smooth corners */
+    overflow: hidden; /* keeps image corners rounded */
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: fadeSlideUp 1s;
+}
+
+    .education-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .education-card .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--bs-primary)
+    }
+
+    .education-card .card-text {
+        font-size: 0.95rem;
+        color: var(--bs-primary);
+    }
+
 .AboutImg {
     height: 17.5rem;
     width: 17.5rem;
