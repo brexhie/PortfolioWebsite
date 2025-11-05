@@ -44,17 +44,138 @@
             </nav>
         </header>
 
-        <div class="container">
+        <div class="container home-container">
             <main role="main" class="pb-3">
-                <div class="text-center">
-                    <h1 class="display-4 heading-home">Hi, my name is Brett Ryan</h1>
-                    <p class="home-text">Software developer passionate about building clean, efficient solutions.</p>
-                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-                        <a href="projects.html" class="btn-viewWork">View Work</a>
-                        <a href="docs/Brett Ryan - CV.pdf" download="" class="btn-download">Download CV</a>
+                <div class="home-content">
+                    <img src="Media/ProfilePicture.png" class="HomeImg" alt="Profile Picture of Brett Ryan" />
+                    <div class="home-text-section">
+                        <h1 class="display-4 heading-home">Brett Ryan</h1>
+                        <h2 class="home-text">
+                        Junior Software Developer - Passionate about building clean, efficient solutions.
+                        </h2>
+                        <div class="home-buttons">
+                            <a href="#" class="btn-viewWork">View Work</a>
+                            <a href="docs/Brett Ryan - CV.pdf" download class="btn-download">Download CV</a>
+                        </div>
                     </div>
                 </div>
             </main>
+        </div>
+
+        <div class="about-section">
+            <h1 class="about-h1">So, Who Am I?</h1>
+            <div class="about-container">
+                <img class="AboutImg" src="Media/ProfilePicture.png" alt="Myself" />
+                <div>
+                    <div class="about-text">
+                        <p>
+                        My name is Brett Ryan. I'm a software developer from Kariega, Eastern Cape who loves to design and build web based solutions.<br />
+
+                        I hold a National Certificate in Information Technology: Database Development which is a NQF 6 level qualification with it's SAQA ID being 71850. <br />
+
+                        When I'm not coding, I love playing my favourite video game Tom Clancy's Rainbow Six Siege, reading, training MMA with my buddies, and going to the gym. <br />
+
+                        My passion for tech started in my first class of Computer Applications and Technology (CAT) in grade 10 of high school. In grade 12, I wrote my first HTML web page. This was the moment I knew I wanted to become a programmer.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                    <h1 class="mb-4 skills-h1">My Skills</h1>
+                    <div class="skills">
+                        <button type="button" class="btn-skill">C#</button>
+                        <button type="button" class="btn-skill">ASP.NET Core</button>
+                        <button type="button" class="btn-skill">HTML</button>
+                        <button type="button" class="btn-skill">CSS</button>
+                        <button type="button" class="btn-skill">JavaScript</button>
+                        <button type="button" class="btn-skill">Bootstrap</button>
+                        <button type="button" class="btn-skill">SQL Server</button>
+                        <button type="button" class="btn-skill">Java</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="projects-section">
+            <h1 class="about-h1">Projects</h1>
+            <div class="projects-container">
+                <div class="container my-5"> <!--Project cards container-->
+                    <div class="row g-4">
+                        
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card project-card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Work Integrated Learning at Volkswagen South Africa - Year 2</h5>
+                                    <p class="card-text"> As part of the Work Integrated Learning project for the second year of the Software Development course at
+                                    CTU Training Solutions, I attended Volkswagen South Africa for 2 weeks. I shadowed the development of
+                                    an internal award system focused on the company's core values. The system was developed with
+                                    ASP.NET Core MVC. 
+                                    I took part in software developer team meetings, giving me insight on the planning and structure of
+                                    Volkswagen's IT projects.</p><br>
+                                    <H6>Tech Stack:</H6>
+                                    <ul>
+                                        <li>C#</li>
+                                        <li>ASP.NET Core</li>
+                                        <li>SQL Server</li>
+                                        <li>HTML + CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <!-- Project Card -->
+                            <div class="card project-card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Work Integrated Learning at Volkswagen South Africa - Year 3</h5>
+                                    <p class="card-text">  I completed my Work Integrated Learning project for my third year studies in the Software Development
+                                    course at CTU Training Solutions at Volkswagen in Kariega. I was situated in the Information Services
+                                    offices and was mentored by the IT manager. 
+                                    I was tasked to develop additional functionality to an existing internal inventory management system.  
+                                    I demonstrated the functionality to two IT managers who were satisfied with the end result.</p><br>
+                                    <H6>Tech Stack:</H6>
+                                    <ul>
+                                        <li>C#</li>
+                                        <li>ASP.NET Core</li>
+                                        <li>SQL Server</li>
+                                        <li>HTML + CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <!-- Another Project Card -->
+                        </div>
+
+                    </div>
+            </div>    
+        </div>
+
+        <div class="container">
+            <div class="container my-5"> <!--Contact card container-->
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm border-0 rounded-3 p-4 text-center animation-container">
+                            <h1 style="margin-top: 0;">Get in Touch</h1>
+                            <p>I'm always open to new opportunities, collaborations, or just a chat.</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="mailto:brettryan170@gmail.com" class="contact-link">
+                                    <img class="emailImg" src="Media/EmailIcon.png" alt="Gmail" />
+                                </a>
+                                <a href="https://github.com/brexhie" target="_blank" class="contact-link">
+                                    <img class="githubImg" src="Media/GithubIcon.png" alt="GitHub" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/brett-ryan-634000238" target="_blank" class="contact-link">
+                                    <img class="linkedinImg" src="Media/LinkedinIcon.png" alt="LinkedIn" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="border-top footer">
